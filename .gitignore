@@ -1,0 +1,6 @@
+.venv
+grapadora
+imgs/*
+libs/*
+models/*
+CLAUDE.md
