@@ -28,8 +28,7 @@ libertad: Posición del eje del péndulo inferior.
 entre 10 y 20 unidades. Grado de libertad: Longitud del péndulo inferior.
 - El eje del péndulo inferior está siempre a 1 unidad en Y desde su parte superior.
 Con independencia de su longitud.
-- El péndulo inferior también puede oscilar hasta un máximo de 45º en cada direc-
-ción con respecto a la posición del péndulo superior. Es decir, ese ángulo es el que
+- El péndulo inferior también puede oscilar hasta un máximo de 45º en cada dirección con respecto a la posición del péndulo superior. Es decir, ese ángulo es el que
 forman los 2 péndulos. Grado de libertad: Oscilación del péndulo inferior.
 
 A tener en cuenta: En este tipo de ejercicios, un buen diseño del grafo es fundamental.
