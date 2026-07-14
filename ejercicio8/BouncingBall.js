@@ -9,7 +9,7 @@ class BouncingBall extends THREE.Object3D {
     // BALL
     static BALL_RADIUS = 0.05;
     static BALL_SEGMENTS = 32;
-    static BALL_MATERIAL = new THREE.MeshStandardMaterial({ color: 'green' });
+    static BALL_TEXTURE = '../imgs/textura-ajedrezada.jpg';
     ballPivot;
     ballMesh;
     
@@ -69,10 +69,13 @@ class BouncingBall extends THREE.Object3D {
     createModelGraph() {
         this.state = this.getInitialState()
         this.ballPivot = new THREE.Object3D();
+        
+        const texture = new THREE.TextureLoader().load(BouncingBall.BALL_TEXTURE);
+        const material = new THREE.MeshStandardMaterial({ map: texture });
 
         this.ballMesh = new THREE.Mesh(
             new THREE.SphereGeometry(BouncingBall.BALL_RADIUS, BouncingBall.BALL_SEGMENTS, BouncingBall.BALL_SEGMENTS),
-            BouncingBall.BALL_MATERIAL
+            material
         );
 
         this.ballPivot.add(this.ballMesh);
