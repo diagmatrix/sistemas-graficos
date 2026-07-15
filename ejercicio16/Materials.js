@@ -95,9 +95,6 @@ class Materials extends THREE.Object3D {
             })
         ];
 
-        // Keep the bump materials so the GUI can tune their bumpScale live
-        this.bumpMaterials = [materials[1], materials[3]];
-
         this.boxes = [];
         materials.forEach((material, i) => {
             const box = new THREE.Mesh(geometry, material);
